@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="6"
+    name="Test Activity"
+    description="Creates a new Test activity, open with your application."
+    minApi="8"
+    minBuildApi="14">
+
+    <category value="Other" />
+
+    <parameter
+        id="activityClass"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="SplashActivity"
+        help="The name of the activity class to create" />
+		
+<parameter
+        id="TransActivityClass"
+        name="TransActivity Class"
+        type="string"
+        constraints="class|nonempty"
+        default="MainActivity"
+        help="The name of the activity class you want to switch after splash" />
+
+    <parameter
+        id="layoutName"
+        name="Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(activityClass)}"
+        default="activity_splash"
+        help="The name of the layout to create for the activity" />
+
+   <parameter 
+     id="isFragment"
+     name="Need Fragment code instead of Activitiy?" 
+     type="boolean"
+     default="false" 
+     help= "If true, the fragment code will be created instead of Activity"/>
+   
+   <parameter 
+     id="isLauncher"
+     name="Launch Activitiy?" 
+     type="boolean"
+     default="true" 
+     help= "isLauncher Activity"/>
+   
+    <thumbs>
+        <thumb>template_test_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
