@@ -301,4 +301,77 @@
       <option name="XML" value="true" />
     </context>
   </template>
+  <template name="LayoutNoInternetConnection" value="&lt;androidx.constraintlayout.widget.ConstraintLayout &#10;        xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;        android:id=&quot;@+id/ll_internet_connection&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;match_parent&quot;&#10;        android:background=&quot;@color/colorPrimary&quot;&#10;        android:gravity=&quot;center&quot;&#10;        android:orientation=&quot;vertical&quot;&gt;&#10;&#10;        &lt;androidx.appcompat.widget.AppCompatImageView&#10;            android:id=&quot;@+id/appCompatImageView2&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:src=&quot;@drawable/ic_signal_wifi_off_black_24dp&quot;&#10;            app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;            app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;            app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;            app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt;&#10;&#10;        &lt;androidx.appcompat.widget.AppCompatTextView&#10;            android:id=&quot;@+id/txt_no_internet_found&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:layout_marginTop=&quot;@dimen/dp_8&quot;&#10;            android:text=&quot;No Internet connection&quot;&#10;            android:textColor=&quot;@android:color/white&quot;&#10;            android:textSize=&quot;@dimen/sp_22&quot;&#10;            android:textStyle=&quot;bold&quot;&#10;            app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;            app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;            app:layout_constraintTop_toBottomOf=&quot;@+id/appCompatImageView2&quot; /&gt;&#10;&#10;        &lt;androidx.appcompat.widget.AppCompatButton&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:layout_height=&quot;wrap_content&quot;&#10;            android:layout_marginTop=&quot;@dimen/dp_16&quot;&#10;            android:background=&quot;@color/colorPrimaryDark&quot;&#10;            android:padding=&quot;@dimen/dp_16&quot;&#10;            android:text=&quot;Try again&quot;&#10;            android:textColor=&quot;@android:color/white&quot;&#10;            app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;            app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;            app:layout_constraintTop_toBottomOf=&quot;@+id/txt_no_internet_found&quot; /&gt;&#10;&#10;&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;" description="No internet Connection" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="SplashActivity" value=" startActivity(Intent(this@$SplashScreen$, $MainActivity$::class.java))&#10; this@$SplashScreen$.finish()" description="Transfer Screen" toReformat="false" toShortenFQNames="true">
+    <variable name="SplashScreen" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MainActivity" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="LayoutProfilePicAndName" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;androidx.constraintlayout.widget.ConstraintLayout&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:layout_margin=&quot;@dimen/dp_4&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:orientation=&quot;horizontal&quot;&gt;&#10;&#10;    &lt;androidx.appcompat.widget.AppCompatImageView&#10;        android:id=&quot;@+id/img_$profile$&quot;&#10;        android:layout_width=&quot;@dimen/dp_50&quot;&#10;        android:layout_height=&quot;@dimen/dp_50&quot;&#10;        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;        app:layout_constraintStart_toStartOf=&quot;parent&quot;&#10;        app:layout_constraintTop_toTopOf=&quot;parent&quot;&#10;        tools:src=&quot;@tools:sample/avatars&quot; /&gt;&#10;&#10;    &lt;androidx.appcompat.widget.AppCompatTextView&#10;        android:id=&quot;@+id/txt_$name$&quot;&#10;        android:layout_width=&quot;0dp&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:layout_margin=&quot;@dimen/dp_8&quot;&#10;        android:textAppearance=&quot;?attr/textAppearanceListItem&quot;&#10;        app:layout_constraintBottom_toBottomOf=&quot;parent&quot;&#10;        app:layout_constraintEnd_toEndOf=&quot;parent&quot;&#10;        app:layout_constraintStart_toEndOf=&quot;@id/img_$profile$&quot;&#10;        app:layout_constraintTop_toTopOf=&quot;parent&quot;&#10;        tools:text=&quot;@tools:sample/first_names&quot; /&gt;&#10;&#10;&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;&#10;" description="profile and name only" toReformat="false" toShortenFQNames="true">
+    <variable name="profile" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LayoutButtonTest" value="&lt;androidx.appcompat.widget.AppCompatButton&#10;            android:id=&quot;@+id/btn_test&quot;&#10;            android:layout_width=&quot;wrap_content&quot;&#10;            android:gravity=&quot;center&quot;&#10;            android:layout_gravity=&quot;center&quot;&#10;            android:text=&quot;test&quot;&#10;            android:textColor=&quot;@android:color/white&quot;&#10;            android:background=&quot;@color/GrassDark&quot;&#10;            android:layout_height=&quot;wrap_content&quot;/&gt;" description="Test Button green" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="forLoop1..5" value="for (i in 1..5) {&#10;            &#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="IdBtn" value="android:id=&quot;@+id/btn_$item$&quot;" description="id button" toReformat="false" toShortenFQNames="true">
+    <variable name="item" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="Id_ll" value="android:id=&quot;@+id/ll_$Container$&quot;" description="LinearLayout" toReformat="true" toShortenFQNames="true">
+    <variable name="Container" expression="complete()" defaultValue="Container" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LayoutTextView" value="&lt;TextView&#10;    android:id=&quot;@+id/txt_$no_task_found$&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;match_parent&quot;&#10;    android:layout_gravity=&quot;center&quot;&#10;    android:gravity=&quot;center&quot;&#10;    android:text=&quot;$no_task_found$&quot;&#10;    android:textColor=&quot;@color/colorPrimary&quot;&#10;    android:textSize=&quot;@dimen/sp_22&quot;&#10;    android:textStyle=&quot;bold&quot; /&gt;" description="Text View" toReformat="true" toShortenFQNames="true">
+    <variable name="no_task_found" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="GsonGetArrayList" value="fun get$ListName$ArrayList(json: String): ArrayList&lt;$File$&gt; {&#10;        val type = object : TypeToken&lt;ArrayList&lt;$File$&gt;&gt;() {}.type&#10;        var m$File$List: ArrayList&lt;$File$&gt; = ArrayList()&#10;        m$File$List = Gson().fromJson(json, type)&#10;        return m$File$List&#10;}" description="getting array list from string" toReformat="false" toShortenFQNames="true">
+    <variable name="ListName" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="File" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="GsonToJson" value="var json = Gson().toJson($arrayList$)" description="Getting string of Gson" toReformat="false" toShortenFQNames="true">
+    <variable name="arrayList" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="logJson" value="Log.d(Constant.Tag,&quot;--&gt; ${Gson().toJson($test$)}&quot;)" description="Print ArrayList in String" toReformat="false" toShortenFQNames="true">
+    <variable name="test" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="GsonToClassObject" value="private fun get$ClassObject$Object (json: String): $ModelClass$ {&#10;&#9;val type = object : TypeToken&lt;$ModelClass$&gt;() {}.type&#10;&#9;return Gson().fromJson(json, type)&#10;}" description="getting Class object from string" toReformat="false" toShortenFQNames="true">
+    <variable name="ClassObject" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ModelClass" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
 </templateSet>
